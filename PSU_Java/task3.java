@@ -10,10 +10,10 @@ public class task3 {
             }else if(arr[mid]>target){
                 high=mid-1;
             }else{
-                System.out.println("Elemnt not found");
+                return mid;
             }
-            System.out.println(arr[target]);
         }
+            
         return -1;
     }
     public static void main(String args[]){
@@ -25,6 +25,8 @@ public class task3 {
         }
         int target=sc.nextInt();
         BinarySearch(val,target);
+        int result = BinarySearch(val, target);
+        System.out.println("found at index "+ result);
 
     sc.close();
 
