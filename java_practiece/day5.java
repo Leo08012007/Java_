@@ -44,7 +44,6 @@ class day5{
         Product(a,b);
     }
 }
-    */
 
 import java.util.*;
 class day5{
@@ -63,3 +62,27 @@ public static int Factorial(int n){
         Factorial(sc.nextInt());
     }
 }
+
+    */
+import java.util.*;
+class day5{
+    public static void main(String args[]){
+        int f1=0;
+        int f2=1;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n>=1){
+            System.out.print(f1+" ");
+        } if (n>=2){
+            System.out.print(f2+" ");
+        }
+            for(int i=3;i<=n;i++){
+                int f3=f1+f2;
+                System.out.print(f3+" ");
+                f1=f2;
+                f2=f3;
+            }
+
+        }
+        }
+    
