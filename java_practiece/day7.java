@@ -36,7 +36,7 @@ class day7{
 
     }
 }
-*/
+
 class day7{
     public static int Gcd(int a,int b){
         while(b!=0){
@@ -60,5 +60,20 @@ class day7{
         System.out.println(gcd2);
         System.out.println(gcd3);
     }
+}
+*/
+import java.util.Scanner;
+class day7{
+    
+    
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if((n%n==0)&&(n%1==n)){
+            System.out.println("Prime");
+        }
+        
+        
+}
 }
     
