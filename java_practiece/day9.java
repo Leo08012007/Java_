@@ -21,10 +21,11 @@ class day9{
     Scanner sc=new Scanner(System.in);
     int n=sc.nextInt();
     int arr[]=new int[n];
-    int max=arr[0];
+    //int max=arr[0];
     for(int i=0;i<n;i++){
       arr[i]=sc.nextInt();
     }
+    /* 
     for(int i=1;i<n;i++){
       if(arr[i]>max){
         max=arr[i];
@@ -37,6 +38,26 @@ class day9{
         max2=arr[i];
       }
     }
-    System.out.println("Second max element: " + max2);
+    System.out.println("Second max element: " + max2);*/
+    
+    int res[]=new int[n];
+    for(int i=0;i<n;i++){
+      int count1=0;
+      while(arr[i]!=0){
+        int r=arr[i]%10;
+        count1 ++;
+      arr[i]=arr[i]/10;
+      res[i]=count1;
+    }
+  }
+  int count2=0;
+  for(int i=0;i<n;i++){
+    
+    if(res[i]%2==0){
+      count2 ++;
+      
+    }
+  }
+  System.out.println("no of even count difgits:"+count2);
   }
 }
