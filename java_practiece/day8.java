@@ -38,7 +38,7 @@ class day8{
 
     
 
-*/
+
 import java.util.Scanner;
 class day8{
     public static void main(String args[]){
@@ -67,7 +67,34 @@ class day8{
 
             }
         
+*/
+    //boolean 
+    //asending and desending 
+    //isprime 
+import java.util.*;
+    class day8{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Elements are : ");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        int sum=0;
+        for(int i=0;i<n;i++){
+            sum=sum+arr[i];
 
-    
+        }
+        System.out.println();
+        System.out.println("The sum is : "+ sum);
+        int avg=sum/n;
+        System.out.println();
+        System.out.println("AVG : " + avg);
+    }
+}
 
 
