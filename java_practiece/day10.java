@@ -101,23 +101,23 @@ public class day10 {
         }
         }
     */
+   //leetcode 3731 missing elements 
    import java.util.*;
 public class day10 {
     public static void main(String args[]){
         Scanner sc= new Scanner (System.in);
         int n=sc.nextInt();
         int []arr=new int[n];
-        int firstc=0;
         for(int i=0;i<n;i++){
                 arr[i]=sc.nextInt();
-            }
+        }
         int max=arr[0];
             int min=arr[0];
         for(int i=1;i<n;i++){
             if(max<arr[i]){
                 max=arr[i];
             }
-            if(min>arr[0]){
+            if(min>arr[i]){
                 min=arr[i];
             }
         }
@@ -125,13 +125,13 @@ public class day10 {
             MaxMin[0]=max;
             MaxMin[1]=min;
         System.out.println(Arrays.toString(MaxMin));
+        int j=0;
         for(int i=min;i<max;i++){
-            int values=i;
-            System.out.println(values);
-            for(int j=0;j<arr.length;j++){
-                
-            }
-
+            if (j < arr.length && arr[j] == i) {
+        j++;
+    } else {
+        System.out.println(i);
+    }
         }
         }
     }
