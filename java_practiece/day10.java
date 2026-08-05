@@ -101,7 +101,6 @@ public class day10 {
         }
         }
     */
-   //leetcode 3731 missing elements 
    import java.util.*;
 public class day10 {
     public static void main(String args[]){
@@ -110,7 +109,9 @@ public class day10 {
         int []arr=new int[n];
         for(int i=0;i<n;i++){
                 arr[i]=sc.nextInt();
-        }
+            }
+        Arrays.sort(arr);
+         System.out.println(Arrays.toString(arr));
         int max=arr[0];
             int min=arr[0];
         for(int i=1;i<n;i++){
